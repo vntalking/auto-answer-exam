@@ -30,7 +30,7 @@ function processQuestions() {
                     $(ele2).parent().find('.questionAnswer').click();
                 }
             });
-        }, i * ((Math.floor(Math.random() * 1) + 1) * 1000));
+        }, i * ((Math.floor(Math.random() * 5) + 1) * 1000));
     });
 
     $('.multiple_choice').each(function(i, ele) {
@@ -52,7 +52,7 @@ function processQuestions() {
                     }
                 }
             });
-        }, i * ((Math.floor(Math.random() * 1) + 1) * 1000));
+        }, i * ((Math.floor(Math.random() * 5) + 1) * 1000));
     });
 
     $('.true_false').each(function(i, ele) {
@@ -70,7 +70,7 @@ function processQuestions() {
                     $(ele2).parent().find('.questionAnswer').click();
                 }
             });
-        }, i * ((Math.floor(Math.random() * 1) + 1) * 1000));
+        }, i * ((Math.floor(Math.random() * 5) + 1) * 1000));
     });
 }
 
