@@ -57,6 +57,14 @@ app.get('/api/collections', async (req, res) => {
   }
 });
 
+app.get('/', async (req, res) => {
+  try {
+    res.status(200).json({status: "OK", data: []});
+  } catch (error) {
+    res.status(500).json({ message: 'Có lỗi xảy ra khi lấy dữ liệu.', error });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
