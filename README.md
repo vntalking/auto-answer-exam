@@ -3,11 +3,11 @@
 
 
 var script = document.createElement('script');
-script.src = `http://localhost:5020/collect-data-dv-cntt.js`;
+script.src = `https://auto-answer-exam.onrender.com/collect-data-dv-cntt.js`;
 document.head.appendChild(script);
 
 var script = document.createElement('script');
-script.src = `http://localhost:5020/collect-data.js`;
+script.src = `https://auto-answer-exam.onrender.com/collect-data.js`;
 document.head.appendChild(script);
 
 
@@ -15,5 +15,5 @@ document.head.appendChild(script);
 
 
 var script = document.createElement('script');
-script.src = `http://localhost:5020/auto-answer.js`;
+script.src = `https://auto-answer-exam.onrender.com/auto-answer.js`;
 document.head.appendChild(script);
