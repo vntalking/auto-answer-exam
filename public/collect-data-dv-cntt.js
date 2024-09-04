@@ -26,7 +26,7 @@
   }
 
   // Đẩy dữ liệu lên server
-  fetch('https://auto-answer-exam.onrender.com/collect-data.js/api/collect', {
+  fetch('https://auto-answer-exam.onrender.com/api/collect', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
