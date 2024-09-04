@@ -4,7 +4,7 @@ let cauhoi = [];
 // Hàm để tải dữ liệu từ API
 async function fetchData() {
     try {
-        const response = await fetch(`http://localhost:5020/api/collections`);
+        const response = await fetch(`https://auto-answer-exam.onrender.com/collect-data.js/api/collections`);
         const data = await response.json();
         cauhoi = data; // Lưu dữ liệu vào biến cauhoi
         processQuestions(); // Gọi hàm xử lý câu hỏi sau khi nhận dữ liệu
