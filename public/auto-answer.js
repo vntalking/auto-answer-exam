@@ -47,11 +47,11 @@ function processQuestions() {
 
             $(ele).find('.question-option').each(function(i2, ele2) {
                 const ans = cautraloi1["ans"];
-                if(`${ans}`.includes($(ele2).text())) {
+                if (`${ans}`.includes($(ele2).text())) {
                     setTimeout(() => {
                         $(ele2).parent().find('.questionAnswer').click();
                         console.log("Clicked:", $(ele2).text());
-                    }, 500); // Thay đổi 1000 thành thời gian trễ mong muốn tính bằng mili giây
+                    }, i2 * 500); // Thay đổi 500 thành thời gian trễ mong muốn
                 }
             });
         }, i * ((Math.floor(Math.random() * 5) + 1) * 1000));
