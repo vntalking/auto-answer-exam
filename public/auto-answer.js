@@ -26,7 +26,7 @@ function processQuestions() {
                 }
             });
             $(ele).find('.question-option').each(function(i2, ele2) {
-                if ($(ele2).text().indexOf(cautraloi) > -1) {
+                if ($(ele2).text().trim() === cautraloi.trim()) {
                     $(ele2).parent().find('.questionAnswer').click();
                     console.log("Clicked:", $(ele2).text());
                 }
