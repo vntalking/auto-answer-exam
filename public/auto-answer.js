@@ -50,7 +50,7 @@ function processQuestions() {
             $(ele).find('.question-option').each(function(i2, ele2) {
                 const ans = cautraloi1["ans"];
                 if(`${ans}`.includes($(ele2).text())) {
-                    $(ele2).parent().find('.questionAnswer').trigger('click');
+                    $(ele2).parent().find('.questionAnswer').click();
                     console.log("Clicked:", $(ele2).text());
                 }
                 // for (let e in cautraloi1) {
