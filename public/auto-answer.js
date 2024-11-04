@@ -51,7 +51,7 @@ function processQuestions() {
                     setTimeout(() => {
                         $(ele2).parent().find('.questionAnswer').click();
                         console.log("Clicked:", $(ele2).text());
-                    }, 1000); // Thay đổi 1000 thành thời gian trễ mong muốn tính bằng mili giây
+                    }, 500); // Thay đổi 1000 thành thời gian trễ mong muốn tính bằng mili giây
                 }
             });
         }, i * ((Math.floor(Math.random() * 5) + 1) * 1000));
