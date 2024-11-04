@@ -28,6 +28,7 @@ function processQuestions() {
             $(ele).find('.question-option').each(function(i2, ele2) {
                 if ($(ele2).text().indexOf(cautraloi) > -1) {
                     $(ele2).parent().find('.questionAnswer').click();
+                    console.log("Clicked:", $(ele2).text());
                 }
             });
         }, i * ((Math.floor(Math.random() * 5) + 1) * 1000));
@@ -76,6 +77,7 @@ function processQuestions() {
             $(ele).find('.question-option').each(function(i2, ele2) {
                 if ($(ele2).text().indexOf(cautraloi2) > -1) {
                     $(ele2).parent().find('.questionAnswer').click();
+                    console.log("Clicked:", $(ele2).text());
                 }
             });
         }, i * ((Math.floor(Math.random() * 5) + 1) * 1000));
