@@ -43,10 +43,14 @@ function processQuestions() {
                     cautraloi1 = entry;
                 }
             });
+
+
+
             $(ele).find('.question-option').each(function(i2, ele2) {
                 const ans = cautraloi1["ans"];
-                if(ans.includes($(ele2).text())) {
-                    $(ele2).parent().find('.questionAnswer').click();
+                if(`${ans}`.includes($(ele2).text())) {
+                    $(ele2).parent().find('.questionAnswer').trigger('click');
+                    console.log("Clicked:", $(ele2).text());
                 }
                 // for (let e in cautraloi1) {
                 //     if (e.indexOf('que') == -1) {
