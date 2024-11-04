@@ -45,21 +45,14 @@ function processQuestions() {
                 }
             });
 
-
-
             $(ele).find('.question-option').each(function(i2, ele2) {
                 const ans = cautraloi1["ans"];
                 if(`${ans}`.includes($(ele2).text())) {
-                    $(ele2).parent().find('.questionAnswer').click();
-                    console.log("Clicked:", $(ele2).text());
+                    setTimeout(() => {
+                        $(ele2).parent().find('.questionAnswer').click();
+                        console.log("Clicked:", $(ele2).text());
+                    }, 1000); // Thay đổi 1000 thành thời gian trễ mong muốn tính bằng mili giây
                 }
-                // for (let e in cautraloi1) {
-                //     if (e.indexOf('que') == -1) {
-                //         if ($(ele2).text().indexOf(cautraloi1[e]) > -1) {
-                //             $(ele2).parent().find('.questionAnswer').click();
-                //         }
-                //     }
-                // }
             });
         }, i * ((Math.floor(Math.random() * 5) + 1) * 1000));
     });
